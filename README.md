@@ -46,6 +46,18 @@ src/main/java/com/dsc/sharededitor/
 IntelliJ에서 `ConsoleClientRunner`의 `main()` 메서드를 직접 실행합니다.
 여러 유저를 테스트하려면 실행 구성(Run Configuration)을 여러 개 만들어 동시에 실행하세요.
 
+#### 2.1 여러 유저 테스트 방법
+1. Run Configuration 클릭
+2. Edit Configuration 선택
+3. Add New Configuration 선택
+4. 드롭박스 중 Application 선택
+5. Name: 임의 설정 (예: ConsoleClient1, ConsoleClient2 ..)
+6. module : java 21, -cp: sharededitor.main
+7. Main class : com.dsc.sharededitor.client.ConsoleClientRunner
+8. Apply 클릭
+9. DscSharedEditorApplication 실행 후 ConsoleClient1,2 각각 동시 실행
+  
+
 ## 테스트 계정
 
 | 아이디 | 비밀번호 |
